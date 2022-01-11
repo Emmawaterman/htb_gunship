@@ -10,14 +10,12 @@ router.get('/', (req, res) => {
 
 router.post('/api/submit', (req, res) => {
     const { artist } = unflatten(req.body);
-	let object = unflatten(req.body);
 	console.log(Object.getPrototypeOf(artist));
 	// console.log(Object.getPrototypeOf(req.body));
 	if (artist.name.includes('Haigh') || artist.name.includes('Westaway') || artist.name.includes('Gingell')) {
-		// return res.json({
-		// 	'response': pug.compile('span Hello #{user}, thank you for letting us know!')({ user: 'guest' })
-		// });
-		return res.json(object);
+		return res.json({
+			'response': pug.compile('span Hello #{user}, thank you for letting us know!')({ user: 'guest' })
+		});
 	} else {
 		return res.json({
 			'response': 'Please provide us with the full name of an existing member.'
