@@ -1,7 +1,7 @@
 import requests
 
-# TARGET_URL = 'http://localhost:1337'
-TARGET_URL = 'http://178.62.74.50:31886'
+TARGET_URL = 'http://localhost:1337'
+# TARGET_URL = 'http://178.62.74.50:31886'
 # TARGET_URL = 'http://docker.hackthebox.eu:30894'
 
 # make pollution
